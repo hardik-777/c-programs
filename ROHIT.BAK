@@ -1,0 +1,22 @@
+/*program to find total no. of currency*/
+/*Author name Rohit date:28/08/2021*/
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int amount,hundred_notes,fifty_notes,ten_notes;
+amount=570;
+printf("total amount is %d", amount);
+hundred_notes=amount/100;
+printf("hundre notes is %d",hundred_notes);
+amount=amount-hundred_notes*100;
+fifty_notes=amount/50;
+printf("fifty notes is %d", fifty_notes);
+amount=amount-fifty_notes*50;
+ten_notes=amount/10;
+printf("ten note is %d",ten_notes);
+amount=amount-ten_notes*10;
+
+getch();
+}
